@@ -4,7 +4,7 @@
         <div class="row mb-5">
           <div class="col-md-6 col-lg-3">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Feliciano</h2>
+              <h2 class="ftco-heading-2">Chow App</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
@@ -72,5 +72,22 @@
       </div>
     </footer>
      <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
+ <script src="{{ asset ("/wiuc/js/jquery.min.js")}}" type="text/javascript"></script>
+ <script src="{{ asset ("/wiuc/js/jquery-migrate-3.0.1.min.js")}}" type="text/javascript"></script>
+ <script src="{{ asset ("/wiuc/js/popper.min.js")}}" type="text/javascript"></script>
+ <script src="{{ asset ("/wiuc/js/bootstrap.min.js")}}" type="text/javascript"></script>
+  <script src="{{ asset ("/wiuc/js/jquery-migrate-3.0.1.min.js")}}" type="text/javascript"></script>
+  <script src="{{ asset ("/wiuc/js/bootstrap.min.js")}}" type="text/javascript"></script>
+   <script src="{{ asset ("/wiuc/js/jquery.easing.1.3.js")}}" type="text/javascript"></script>
+    <script src="{{ asset ("/wiuc/js/jquery.waypoints.min.js")}}" type="text/javascript"></script>
+  <script src="{{ asset ("/wiuc/js/jquery.stellar.min.js")}}" type="text/javascript"></script>
+  <script src="{{ asset ("/wiuc/js/owl.carousel.min.js")}}" type="text/javascript"></script>
+   <script src="{{ asset ("/wiuc/js/jquery.magnific-popup.min.js")}}" type="text/javascript"></script>
+     <script src="{{ asset ("/wiuc/js/jquery.animateNumber.min.js")}}" type="text/javascript"></script>
+     <script src="{{ asset ("/wiuc/js/bootstrap-datepicker.js")}}" type="text/javascript"></script>
+     <script src="{{ asset ("/wiuc/js/jquery.timepicker.min.js")}}" type="text/javascript"></script>
+     <script src="{{ asset ("/wiuc/js/scrollax.min.js")}}" type="text/javascript"></script>
+      <script src="{{ asset ("/wiuc/js/aos.js")}}" type="text/javascript"></script>
+   <script src="{{ asset ("/wiuc/js/google-map.js")}}" type="text/javascript"></script>
+    <script src="{{ asset ("/wiuc/js/main.js")}}" type="text/javascript"></script>
   

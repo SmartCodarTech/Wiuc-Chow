@@ -646,7 +646,6 @@
  <script src="{{ asset ("/wiuc/js/popper.min.js")}}" type="text/javascript"></script>
  <script src="{{ asset ("/wiuc/js/bootstrap.min.js")}}" type="text/javascript"></script>
   <script src="{{ asset ("/wiuc/js/jquery-migrate-3.0.1.min.js")}}" type="text/javascript"></script>
-   <script src="{{ asset ("/wiuc/js/popper.min.js")}}" type="text/javascript"></script>
   <script src="{{ asset ("/wiuc/js/bootstrap.min.js")}}" type="text/javascript"></script>
    <script src="{{ asset ("/wiuc/js/jquery.easing.1.3.js")}}" type="text/javascript"></script>
     <script src="{{ asset ("/wiuc/js/jquery.waypoints.min.js")}}" type="text/javascript"></script>
@@ -657,6 +656,7 @@
      <script src="{{ asset ("/wiuc/js/bootstrap-datepicker.js")}}" type="text/javascript"></script>
      <script src="{{ asset ("/wiuc/js/jquery.timepicker.min.js")}}" type="text/javascript"></script>
      <script src="{{ asset ("/wiuc/js/scrollax.min.js")}}" type="text/javascript"></script>
+      <script src="{{ asset ("/wiuc/js/aos.js")}}" type="text/javascript"></script>
    <script src="{{ asset ("/wiuc/js/google-map.js")}}" type="text/javascript"></script>
     <script src="{{ asset ("/wiuc/js/main.js")}}" type="text/javascript"></script>
     

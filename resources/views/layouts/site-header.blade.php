@@ -20,6 +20,8 @@
       <link href="{{ asset("/wiuc/css/flaticon.css") }}" rel="stylesheet" type="text/css" />
      <link href="{{ asset("/wiuc/css/icomoon.css") }}" rel="stylesheet" type="text/css" />
       <link href="{{ asset("/wiuc/css/style.css") }}" rel="stylesheet" type="text/css" />
+
+
    
    
 
@@ -50,19 +52,19 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Feliciano</a>
+        <a class="navbar-brand" href="index.html">Chop App</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> Menu
         </button>
 
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
-            <li class="nav-item"><a href="blog.html" class="nav-link">Stories</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-            <li class="nav-item cta"><a href="reservation.html" class="nav-link">Book a table</a></li>
+            <li class="nav-item active"><a href="/index" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="/menu" class="nav-link">Menu</a></li>
+            <li class="nav-item"><a href="/blog" class="nav-link">Stories</a></li>
+            <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+            <li class="nav-item cta"><a href="/reservation" class="nav-link">Book a table</a></li>
           </ul>
         </div>
       </div>
