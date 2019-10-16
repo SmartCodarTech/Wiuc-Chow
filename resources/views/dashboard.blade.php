@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>FarmConnect</title>
+  <title>Chow App</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -57,7 +57,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Job Hub
+        Wiuc Chow App
         <small> Dashboard</small>
       </h1>
       <ol class="breadcrumb">
@@ -91,7 +91,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <p>Users</p>
             </div>
             <div class="icon">
-              <i class="fa fa-users"></i>
+              <i class="fa fa-user"></i>
             </div>
             <a href="{{ route('user-management.index') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
@@ -101,12 +101,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- small box -->
           <div class="small-box bg-blue">
             <div class="inner">
-              <h3>{{DB::table('farmer')->count()}}</h3>
+              <h3>{{DB::table('chef')->count()}}</h3>
 
-              <p>Employers</p>
+              <p>Chefs</p>
             </div>
             <div class="icon">
-              <i class="fa fa-institution"></i>
+              <i class="fa fa-user"></i>
             </div>
             <a href="{{ url('system-management/empolyers') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
@@ -117,10 +117,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div class="inner">
               <h3>{{DB::table('customer')->count()}}</h3>
 
-              <p>Countries</p>
+              <p>Customers</p>
             </div>
             <div class="icon">
-              <i class="fa fa-flag"></i>
+              <i class="fa fa-users"></i>
             </div>
             <a href="{{ url('system-management/country') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
@@ -129,12 +129,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- small box -->
           <div class="small-box bg-red">
             <div class="inner">
-              <h3>{{DB::table('product')->count()}}</h3>
+              <h3>{{DB::table('menu')->count()}}</h3>
 
-              <p>Courses</p>
+              <p>Menu</p>
             </div>
             <div class="icon">
-              <i class="fa fa-book"></i>
+              <i class="fa fa-cutlery"></i>
             </div>
             <a href="{{ url('system-management/course') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
@@ -144,12 +144,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
            <div class="col-lg-3 col-xs-6">
              <div class="small-box bg-blue">
             <div class="inner">
-              <h3>{{DB::table('admin')->count()}}</h3>
+              <h3>{{DB::table('category')->count()}}</h3>
 
-              <p>Schools</p>
+              <p>Category</p>
             </div>
             <div class="icon">
-              <i class="fa fa-institution"></i>
+              <i class="fa fa-list"></i>
             </div>
             <a href="{{ url('system-management/schools') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
@@ -159,12 +159,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- small box -->
           <div class="small-box bg-red">
             <div class="inner">
-              <h3>{{DB::table('category')->count()}}</h3>
+              <h3>{{DB::table('order')->count()}}</h3>
 
-              <p>Category of Courses</p>
+              <p>Orders</p>
             </div>
             <div class="icon">
-              <i class="fa fa-list"></i>
+              <i class="fa fa-shopping-cart"></i>
             </div>
             <a href="{{ url('system-management/penalty') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>

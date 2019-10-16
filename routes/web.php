@@ -11,10 +11,12 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('index', function () {
     return view('wiuc/index');
 });
- 
+ Route::get('/login', function () {
+    return view('/login');
+});
 Route::get('about', function () {
     return view('wiuc/about');
 });
@@ -39,20 +41,12 @@ Route::get('blog-single', function () {
     return view('wiuc/blog-single');
 });
 
-Route::get('/login', function () {
-    return view('/login');
-});
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('index');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@contact')->name('farmconnect/contact');
+Route::get('/home', 'HomeController@index')->name('/login');
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@about')->name('farmconnect/about');
 
 Route::get('/dashboard', 'DashboardController@index');
 

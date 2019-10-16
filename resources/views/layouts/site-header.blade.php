@@ -43,7 +43,7 @@
                 <span class="text">youremail@email.com</span>
               </div>
               <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right justify-content-end">
-                <p class="mb-0 register-link"><span>Open hours:</span> <span>Monday - Sunday</span> <span>8:00AM - 9:00PM</span></p>
+                <p class="mb-0 register-link"><span>Open hours:</span> <span>Monday - Sunday</span> <span>8:00AM - 5:00PM</span></p>
               </div>
             </div>
           </div>
@@ -52,19 +52,20 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Chop App</a>
+        <a class="navbar-brand" href="index.html">Chow App</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> Menu
         </button>
 
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="/index" class="nav-link">Home</a></li>
+            <li class="nav-item active"><a href="index" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
             <li class="nav-item"><a href="/menu" class="nav-link">Menu</a></li>
             <li class="nav-item"><a href="/blog" class="nav-link">Stories</a></li>
             <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
             <li class="nav-item cta"><a href="/reservation" class="nav-link">Book a table</a></li>
+            <li class="nav-item cta"><a href="/login" class="nav-link">Login</a></li>
           </ul>
         </div>
       </div>

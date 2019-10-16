@@ -1,7 +1,7 @@
  @include('layouts.site-header')
     <!-- END nav -->
     
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('wiuc/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-center">
@@ -79,7 +79,7 @@
 	          </div>
           </div>
           <div class="col-md-6 d-flex align-items-stretch pb-5 pb-md-0">
-						<div id="map"></div>
+						<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.2967184389154!2d-0.19186198466114876!3d5.670169395889961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9c5ee301f579%3A0xa3a82665183839c!2sWisconsin%20International%20University%20College%2C%20Ghana!5e0!3m2!1sen!2sgh!4v1570817094989!5m2!1sen!2sgh" width="600" height="600" frameborder="20" style="border:;" allowfullscreen=""></iframe></div>
 					</div>
         </div>
 			</div>

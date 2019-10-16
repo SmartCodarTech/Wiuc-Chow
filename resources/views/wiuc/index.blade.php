@@ -9,7 +9,7 @@
           <div class="row slider-text js-fullheight justify-content-center align-items-center" data-scrollax-parent="true">
 
             <div class="col-md-12 col-sm-12 text-center ftco-animate">
-            	<span class="subheading">Feliciano</span>
+            	<span class="subheading">Wiuc Chow App</span>
               <h1 class="mb-4">Best Restaurant</h1>
             </div>
 
@@ -23,7 +23,7 @@
           <div class="row slider-text js-fullheight justify-content-center align-items-center" data-scrollax-parent="true">
 
             <div class="col-md-12 col-sm-12 text-center ftco-animate">
-            	<span class="subheading">Feliciano</span>
+            	<span class="subheading">Chow App</span>
               <h1 class="mb-4">Nutritious &amp; Tasty</h1>
             </div>
 
@@ -37,7 +37,7 @@
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
             <div class="col-md-12 col-sm-12 text-center ftco-animate">
-            	<span class="subheading">Feliciano</span>
+            	<span class="subheading">Wiuc Chow App</span>
               <h1 class="mb-4">Delicious Specialties</h1>
             </div>
 
@@ -106,12 +106,12 @@
 					<div class="col-md-5 wrap-about pt-5 pt-md-5 pb-md-3 ftco-animate">
 	          <div class="heading-section mb-4 my-5 my-md-0">
 	          	<span class="subheading">About</span>
-	            <h2 class="mb-4">Feliciano Restaurant</h2>
+	            <h2 class="mb-4">Wiuc Chow App Restaurant</h2>
 	          </div>
 	          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
 						<pc class="time">
 							<span>Mon - Fri <strong>8 AM - 11 PM</strong></span>
-							<span><a href="#">+ 1-978-123-4567</a></span>
+							<span><a href="#">+233 0302-504391</a></span>
 						</p>
 					</div>
 				</div>
@@ -641,24 +641,7 @@
 		</section>
 		
    @include('layouts.site-footer')
-   <script src="{{ asset ("/wiuc/js/jquery.min.js")}}" type="text/javascript"></script>
- <script src="{{ asset ("/wiuc/js/jquery-migrate-3.0.1.min.js")}}" type="text/javascript"></script>
- <script src="{{ asset ("/wiuc/js/popper.min.js")}}" type="text/javascript"></script>
- <script src="{{ asset ("/wiuc/js/bootstrap.min.js")}}" type="text/javascript"></script>
-  <script src="{{ asset ("/wiuc/js/jquery-migrate-3.0.1.min.js")}}" type="text/javascript"></script>
-  <script src="{{ asset ("/wiuc/js/bootstrap.min.js")}}" type="text/javascript"></script>
-   <script src="{{ asset ("/wiuc/js/jquery.easing.1.3.js")}}" type="text/javascript"></script>
-    <script src="{{ asset ("/wiuc/js/jquery.waypoints.min.js")}}" type="text/javascript"></script>
-  <script src="{{ asset ("/wiuc/js/jquery.stellar.min.js")}}" type="text/javascript"></script>
-  <script src="{{ asset ("/wiuc/js/owl.carousel.min.js")}}" type="text/javascript"></script>
-   <script src="{{ asset ("/wiuc/js/jquery.magnific-popup.min.js")}}" type="text/javascript"></script>
-     <script src="{{ asset ("/wiuc/js/jquery.animateNumber.min.js")}}" type="text/javascript"></script>
-     <script src="{{ asset ("/wiuc/js/bootstrap-datepicker.js")}}" type="text/javascript"></script>
-     <script src="{{ asset ("/wiuc/js/jquery.timepicker.min.js")}}" type="text/javascript"></script>
-     <script src="{{ asset ("/wiuc/js/scrollax.min.js")}}" type="text/javascript"></script>
-      <script src="{{ asset ("/wiuc/js/aos.js")}}" type="text/javascript"></script>
-   <script src="{{ asset ("/wiuc/js/google-map.js")}}" type="text/javascript"></script>
-    <script src="{{ asset ("/wiuc/js/main.js")}}" type="text/javascript"></script>
+  
     
  
  

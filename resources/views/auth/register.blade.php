@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ecomm</title>
+  <title>Chow App portal</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -41,7 +41,7 @@
   <div class="register-logo">
 
           
-    <a href="#"><b>FarmConnect Portal</b></a>
+    <a href="/index"><b>Chow App Portal</b></a>
   </div>
   <!-- /.login-logo -->
   <div class="register-box-body">
