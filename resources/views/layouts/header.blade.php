@@ -4,9 +4,9 @@
     <!-- Logo -->
     <a href="#" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>Job</b>Hub</span>
+      <span class="logo-mini"><b>Chow</b>App</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg">{{ config('app.name', 'Job Hub') }}</span>
+      <span class="logo-lg">{{ config('app.name', 'Chow App') }}</span>
     </a>
 
     <!-- Header Navbar -->
@@ -25,7 +25,7 @@
               <!-- The user image in the navbar-->
               <img src="{{ asset("/bower_components/AdminLTE/dist/img/bg_1.jpg") }}" class="user-image" alt="User Image">
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
-              <span class="hidden-xs">{{ Auth::user()->username }}</span>
+              <span class="hidden-xs"></span>
             </a>
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
@@ -33,11 +33,11 @@
                 <img src="{{ asset("/bower_components/AdminLTE/dist/img/bg_1.jpg") }}" class="img-circle" alt="User Image">
 
                 <p>
-                  {{ Auth::user()->username }}
+
                 </p>
                 <p>
-                                        
-                  <small>Member since {!! Auth::user()->created_at->format('M. Y') !!}</small>
+
+                  <small>Member since </small>
                 </p>
               </li>
               <!-- Menu Footer-->

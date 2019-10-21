@@ -1,6 +1,6 @@
  @include('layouts.site-header')
     <!-- END nav -->
-    
+
     <section class="hero-wrap hero-wrap-2" style="background-image: url('wiuc/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
@@ -12,24 +12,25 @@
         </div>
       </div>
     </section>
-		
+
 		<section class="ftco-section ftco-no-pt ftco-no-pb contact-section">
 			<div class="container">
 				<div class="row d-flex align-items-stretch no-gutters">
 					<div class="col-md-6 pt-5 px-2 pb-2 p-md-5 order-md-last">
 						<h2 class="h4 mb-2 mb-md-5 font-weight-bold">Contact Us</h2>
-						<form action="#">
-              <div class="form-group">
-                <input type="text" class="form-control" name="name" placeholder="Your Name">
+						<form action="{{ route('contact.store')}}">
+                            {{ csrf_field() }}
+              <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                <input type="text" class="form-control" name="name"  value="{{ old('name') }}"placeholder="Your Name">
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="email" placeholder="Your Email">
+              <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">
+                <input type="text" class="form-control" name="email"  value="{{ old('email') }}" placeholder="Your Email">
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" placeholder="Subject">
+              <div class="form-group{{ $errors->has('subject') ? ' has-error' : '' }}">
+                <input type="text" class="form-control" name="subject"  value="{{ old('subject') }}" placeholder="Subject">
               </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" name="message" placeholder="Message"></textarea>
+              <div class="form-group {{ $errors->has('message') ? ' has-error' : '' }}">
+                <textarea name="" id="" cols="30" rows="7" class="form-control" name="message"  value="{{ old('message') }}" placeholder="Message"></textarea>
               </div>
               <div class="form-group">
                 <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
@@ -39,7 +40,7 @@
 					<div class="col-md-6 d-flex align-items-stretch">
 						<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.2967184389154!2d-0.19186198466114876!3d5.670169395889961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9c5ee301f579%3A0xa3a82665183839c!2sWisconsin%20International%20University%20College%2C%20Ghana!5e0!3m2!1sen!2sgh!4v1570817094989!5m2!1sen!2sgh" width="600" height="600" frameborder="20" style="border:;" allowfullscreen=""></iframe></div>
 					</div>
-			
+
 			</div>
 		</section>
 		<section class="ftco-section contact-section">
@@ -72,7 +73,7 @@
         </div>
       </div>
     </section>
-		
+
     @include('layouts.site-footer')
   </body>
 </html>

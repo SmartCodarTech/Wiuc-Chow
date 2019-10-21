@@ -29,8 +29,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         page. However, you can choose any other skin. Make sure you
         apply the skin class to the body tag so the changes take effect.
   -->
-   
-  
+
+
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,7 +39,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
   <![endif]-->
-  
+
 </head>
 
 <body class="hold-transition login-page">
@@ -48,19 +48,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <div class="alert alert-success alert-block">
 
-    <button type="button" class="close" data-dismiss="alert">×</button> 
+    <button type="button" class="close" data-dismiss="alert">×</button>
 
         <strong>{{ $message }}</strong>
 
    </div>
 
 @endif
-  
+
   <!--center><img src="{{ asset("/bower_components/AdminLTE/dist/img/logo.png") }}" class="img-circle" width="80px" height="80px"></center-->
   <div class="login-logo">
 
-          
-    <a href="/index"><b>Chow App Portal</b></a>
+
+    <a href="../index"><b>Chow App Portal</b></a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -70,13 +70,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
        {{ csrf_field() }}
       <div class="form-group has-feedback{{ $errors->has('email') ? ' has-error' : '' }}">
         <input id="email" type="email" name="email" value="{{ old('email') }}" class="form-control" placeholder="Email">
-        
+
         @if ($errors->has('email'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
                                 @endif
-                                
+
                                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback{{ $errors->has('password') ? ' has-error' : '' }}">

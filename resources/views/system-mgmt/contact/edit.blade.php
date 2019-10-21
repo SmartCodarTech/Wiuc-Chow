@@ -1,4 +1,4 @@
-@extends('system-mgmt.country.base')
+@extends('system-mgmt.contact.base')
 
 @section('action-content')
 <div class="container">
@@ -7,7 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Update country</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ route('country.update', ['id' => $country->id]) }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ route('contact.update', ['id' => $country->id]) }}">
                         <input type="hidden" name="_method" value="PATCH">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">

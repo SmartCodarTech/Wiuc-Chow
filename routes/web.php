@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('index', function () {
-    return view('wiuc/index');
+Route::get('/', function () {
+    return view('/dashboard');
 });
  Route::get('/login', function () {
     return view('/login');
@@ -43,15 +43,25 @@ Route::get('blog-single', function () {
 
 
 Auth::routes();
-
+Route::get('admin/routes', 'HomeController@admin')->middleware('admin');
 Route::get('/home', 'HomeController@index')->name('/login');
 
 
 
 Route::get('/dashboard', 'DashboardController@index');
+Route::get('/chef_dashboard', 'DashboardController@index');
 
 Route::post('user-management/search', 'UserManagementController@search')->name('user-management.search');
 Route::resource('user-management', 'UserManagementController');
 
 Route::resource('system-management/category', 'CategoryController');
 Route::post('system-management/category/search', 'CategoryController@search')->name('category.search');
+
+Route::resource('system-management/contact', 'ContactController');
+Route::post('/wiuc/contact','ContactController@contact');
+Route::post('system-management/contact/search', 'CaontactController@search')->name('contact.search');
+Route::get('avatars/{name}', 'ChefController@load');
+Auth::routes();
+
+Route::resource('chef-management', 'ChefController');
+Route::post('chef-management/search', 'ChefController@search')->name('chef-management.search');

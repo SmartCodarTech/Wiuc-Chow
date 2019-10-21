@@ -1,4 +1,4 @@
-@extends('system-mgmt.country.base')
+@extends('system-mgmt.contact.base')
 
 @section('action-content')
 <div class="container">
@@ -7,7 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Add new country</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ route('country.store') }}">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ route('contact.store') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -23,7 +23,7 @@
                                 @endif
                             </div>
                         </div>
-                     
+
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">

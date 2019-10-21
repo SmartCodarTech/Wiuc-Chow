@@ -30,7 +30,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link href="{{ asset("bower_components/AdminLTE/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.cs")}}" rel="stylesheet" type="text/css" />
    <link href="{{ asset("bower_components/AdminLTE/plugins/jvectormap/jquery-jvectormap-1.2.2.css")}}" rel="stylesheet" type="text/css" />
 
-  
+
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,7 +40,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <![endif]-->
 
- 
+
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -50,7 +50,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Sidebar -->
   @include('layouts.sidebar')
   <!-- Left side column. contains the logo and sidebar -->
-  
+
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -63,13 +63,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active">Dashboard</li>
+
       </ol>
     </section>
     @if ($message = Session::get('success'))
 
     <div class="alert alert-success alert-block">
 
-    <button type="button" class="close" data-dismiss="alert">×</button> 
+    <button type="button" class="close" data-dismiss="alert">×</button>
 
         <strong>{{ $message }}</strong>
 
@@ -154,7 +155,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="{{ url('system-management/schools') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
-      
+
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
           <div class="small-box bg-red">
@@ -204,7 +205,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
 
-       
+
         <div class="app">
 
 <center>
@@ -245,10 +246,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </div>
           </div>
         </div>
-            
+
             <!-- /.box-body -->
-          
-          
+
+
           <div class="col-md-6">
           <div class="box box-solid">
             <div class="box-header with-border">
@@ -269,26 +270,26 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <span class="sr-only">40% Complete (success)</span>
                 </div>
               </div>
-               
+
             </div>
           </div>
         </div>
-  
-            
+
+
             <!-- /.box-body -->
-          
+
           <!-- /.box -->
-       
+
       </div>
-        
+
 
         <!-- /.col -->
-    
 
- 
+
+
   </div>
 </div>
- 
+
       <!-- /.tab-pane -->
 
       <!-- Settings tab content -->
@@ -297,7 +298,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
  <!-- Footer -->
 
   @include('layouts.footer')
-  
+
 <!-- ./wrapper -->
 
 <!-- REQUIRED JS SCRIPTS -->

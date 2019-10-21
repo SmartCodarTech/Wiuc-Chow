@@ -25,11 +25,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('/dashboard');
+        return view('wiuc/index');
     }
     public function about()
     {
         return view('wiuc/about');
+    }
+    public function admin()
+    {
+        return view('/dashboard');
     }
     public function contact()
     {
