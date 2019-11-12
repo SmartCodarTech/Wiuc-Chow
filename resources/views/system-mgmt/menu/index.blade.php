@@ -1,4 +1,4 @@
-@extends('system-mgmt.debit.base')
+@extends('system-mgmt.menu.base')
 @section('action-content')
     <!-- Main content -->
     <section class="content">
@@ -6,10 +6,10 @@
   <div class="box-header">
     <div class="row">
         <div class="col-sm-8">
-          <h3 class="box-title">List of Debits</h3>
+          <h3 class="box-title">List of Menu</h3>
         </div>
         <div class="col-sm-4">
-          <a class="btn btn-primary" href="{{ route('debit.create') }}">Add new debitors</a>
+          <a class="btn btn-primary" href="{{ route('menu.create') }}">Add new debitors</a>
         </div>
     </div>
   </div>
@@ -19,7 +19,7 @@
         <div class="col-sm-6"></div>
         <div class="col-sm-6"></div>
       </div>
-      <form method="POST" action="{{ route('debit.search') }}">
+      <form method="POST" action="{{ route('menu.search') }}">
          {{ csrf_field() }}
          @component('layouts.search', ['title' => 'Search'])
           @component('layouts.two-cols-search-row', ['items' => ['Name'], 
@@ -47,23 +47,23 @@
               </tr>
             </thead>
             <tbody>
-            @foreach ($debits as $debit)
+            @foreach ($menus as $menu)
                 <tr role="row" class="odd">
                   <td><img src="../{{$debit->employees_picture }}" width="50px" height="50px"/></td>
-                  <td class="sorting_1">{{ $debit->employees_firstname }}  {{$debit->employees_lastname}}</td>
-                  <td>{{ $debit->comment }}</td>
-                  <td>{{ $debit->amount }}</td>
-                  <td>{{ $debit->start_date }}</td>
-                  <td>{{ $debit->end_date }}</td>
+                  <td class="sorting_1">{{ $menu->employees_firstname }}  {{$menu->employees_lastname}}</td>
+                  <td>{{ $menu->comment }}</td>
+                  <td>{{ $menu->amount }}</td>
+                  <td>{{ $menu->start_date }}</td>
+                  <td>{{ $menu->end_date }}</td>
 
                   <td>
                     <button type="button" class="btn btn-block btn-success">Active</button>
                   </td>
                   <td>
-                    <form class="row" method="POST" action="{{ route('debit.destroy', ['id' => $debit->id]) }}" onsubmit = "return confirm('Are you sure?')">
+                    <form class="row" method="POST" action="{{ route('menu.destroy', ['id' => $menu->id]) }}" onsubmit = "return confirm('Are you sure?')">
                         <input type="hidden" name="_method" value="DELETE">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                        <a href="{{ route('debit.edit', ['id' => $debit->id]) }}" class="btn btn-info col-sm-3 col-xs-5 btn-margin">
+                        <a href="{{ route('menu.edit', ['id' => $menu->id]) }}" class="btn btn-info col-sm-3 col-xs-5 btn-margin">
                         Update
                         </a>
                         <button type="submit" class="btn btn-danger col-sm-3 col-xs-5 btn-margin">
@@ -96,11 +96,11 @@
       </div>
       <div class="row">
         <div class="col-sm-5">
-          <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">Showing 1 to {{count($debits)}} of {{count($debits)}} entries</div>
+          <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">Showing 1 to {{count($menus)}} of {{count($menus)}} entries</div>
         </div>
         <div class="col-sm-7">
           <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
-            {{ $debits->links() }}
+            {{ $menus->links() }}
           </div>
         </div>
       </div>

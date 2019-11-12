@@ -3,9 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Menu;
 
 class MenuController extends Controller
 {
+     public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +18,9 @@ class MenuController extends Controller
      */
     public function index()
     {
-        //
+         $menus = Menu::paginate(5);
+
+        return view('system-mgmt/menu/index', ['menus' => $menus]);
     }
 
     /**
@@ -34,7 +41,7 @@ class MenuController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**

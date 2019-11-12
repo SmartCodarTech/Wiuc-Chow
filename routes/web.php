@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('/dashboard');
+    return view('/wiuc/index');
 });
  Route::get('/login', function () {
     return view('/login');
@@ -57,9 +57,14 @@ Route::resource('user-management', 'UserManagementController');
 Route::resource('system-management/category', 'CategoryController');
 Route::post('system-management/category/search', 'CategoryController@search')->name('category.search');
 
+Route::resource('system-management/menu', 'MenuController');
+Route::post('system-management/menu/search', 'MenuController@search')->name('menu.search');
+
 Route::resource('system-management/contact', 'ContactController');
+Route::resource('wiuc/contact', 'ContactController');
 Route::post('/wiuc/contact','ContactController@contact');
-Route::post('system-management/contact/search', 'CaontactController@search')->name('contact.search');
+
+Route::post('system-management/contact/search', 'ContactController@search')->name('contact.search');
 Route::get('avatars/{name}', 'ChefController@load');
 Auth::routes();
 

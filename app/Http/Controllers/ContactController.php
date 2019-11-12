@@ -63,7 +63,7 @@ class ContactController extends Controller
             'message' => $request['message']
 
         ]);
-        return redirect()->intended('/wiuc/contact')->with('success','Thanks for Contacting us, we will get back to you soon');
+        return redirect()->intended('system-management/contact')->with('success','Thanks for Contacting us, we will get back to you soon');
     }
 
     /**

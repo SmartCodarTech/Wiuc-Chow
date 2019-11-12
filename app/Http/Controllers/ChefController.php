@@ -60,7 +60,7 @@ class ChefController extends Controller
         // Upload image
         $path = $request->file('picture')->store('avatars');
         $keys = ['last_name', 'first_name','gender',
-            'age', 'phone', 'address','employed_hired', 'salary', 'staff_position','twiiter_account',
+            'age', 'phone','address','employed_date','salary','staff_position','twiiter_account',
             'facebook_account','ig_account','gmail_account'];
         $input = $this->createQueryInput($keys, $request);
         $input['picture'] = $path;
@@ -116,7 +116,7 @@ class ChefController extends Controller
         $this->validateInput($request);
         // Upload image
         $keys = ['last_name', 'first_name','gender',
-            'age', 'phone', 'address','employed_hired', 'salary', 'staff_position','twiiter_account',
+            'age', 'phone', 'address','employed_date', 'salary', 'staff_position','twiiter_account',
             'facebook_account','ig_account','gmail_account'];
         $input = $this->createQueryInput($keys, $request);
         if ($request->file('picture')) {
@@ -196,7 +196,7 @@ class ChefController extends Controller
             'age' => 'required|max:60',
             'phone' => 'required',
             'address'=>'required',
-            'employed_hired' => 'required',
+            'employed_date' => 'required',
             'salary' => 'required',
             'staff_position' => 'required',
             'twiiter_account' => 'required|max:60',

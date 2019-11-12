@@ -109,7 +109,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div class="icon">
               <i class="fa fa-user"></i>
             </div>
-            <a href="{{ url('system-management/empolyers') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{ url('chef-management') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <div class="col-lg-3 col-xs-6">
